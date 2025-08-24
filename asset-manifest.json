@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/upms-visualization/static/css/main.9d9ecbb4.css",
+    "main.js": "/upms-visualization/static/js/main.be9b9172.js",
+    "index.html": "/upms-visualization/index.html",
+    "main.9d9ecbb4.css.map": "/upms-visualization/static/css/main.9d9ecbb4.css.map",
+    "main.be9b9172.js.map": "/upms-visualization/static/js/main.be9b9172.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d9ecbb4.css",
+    "static/js/main.be9b9172.js"
+  ]
+}
