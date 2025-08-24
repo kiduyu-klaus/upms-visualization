@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* Additional component-specific styles */
+.scene-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.transform-bar {
+  position: relative;
+  overflow: hidden;
+}
+
+.transform-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+.soak-animation {
+  animation: soak 1s ease-in-out;
+}
+
+@keyframes soak {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.bridge-matrix {
+  position: relative;
+}
+
+.bridge-matrix.crossed::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 40%, red 45%, red 55%, transparent 60%),
+              linear-gradient(-45deg, transparent 40%, red 45%, red 55%, transparent 60%);
+}
